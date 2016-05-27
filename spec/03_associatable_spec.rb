@@ -1,10 +1,12 @@
 require '03_associatable'
+require 'byebug'
 
 describe 'AssocOptions' do
   describe 'BelongsToOptions' do
     it 'provides defaults' do
       options = BelongsToOptions.new('house')
 
+      #debugger
       expect(options.foreign_key).to eq(:house_id)
       expect(options.class_name).to eq('House')
       expect(options.primary_key).to eq(:id)
@@ -65,7 +67,7 @@ describe 'AssocOptions' do
       options = HasManyOptions.new('cats', 'Human')
       expect(options.model_class).to eq(Cat)
     end
-    
+
     it '#table_name returns table name of associated object' do
       options = BelongsToOptions.new('human')
       expect(options.table_name).to eq('humans')
