@@ -107,3 +107,6 @@ def has_one_through(name, through_name, source_name)
   end
 end
 ```
+
+Developed by [Joy Jing][joy-jing]
+[joy-jing]: https://joyjing1.github.io/
