@@ -4,6 +4,23 @@ Active Record Lite is an academic exercise in re-building the fundamental compon
 
 The purpose was to deeply understand how ActiveRecord works, with a focus on how it translates associations and queries into SQL code. It is written in pure Ruby.
 
+## Demo
+
+Some specs have been written to demonstrate the functionality of the project. To run the specs:
+
+1. In terminal, `git clone https://github.com/JoyJing1/ActiveRecordLite.git`
+2. `cd ActiveRecordLite`
+
+Running them in the following order will follow the progression of the project.
+
+### Suggested Order
+1. `rspec spec/00_attr_accessor_object_spec.rb`
+2. `rspec spec/01_sql_object_spec.rb`
+3. `rspec spec/02_searchable_spec.rb`
+4. `rspec spec/03_associatable_spec.rb`
+5. `rspec spec/04_associatable2_spec.rb`
+
+
 ## Code Snippets
 
 ### where
@@ -90,12 +107,3 @@ def has_one_through(name, through_name, source_name)
   end
 end
 ```
-
-## Using the specs
-
-Some specs have been written to demonstrate the abilities of the project. To run the specs:
-
-1. 
-
-
-Running them in the following order will follow the progression of the project.
