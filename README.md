@@ -90,3 +90,12 @@ def has_one_through(name, through_name, source_name)
   end
 end
 ```
+
+## Using the specs
+
+Some specs have been written to demonstrate the abilities of the project. To run the specs:
+
+1. 
+
+
+Running them in the following order will follow the progression of the project.
